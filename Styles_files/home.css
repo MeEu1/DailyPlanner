@@ -1,0 +1,15 @@
+.page-section a {
+    font-size: 4em;
+}
+
+@keyframes page-section-animation {
+    0% {
+        background: var(--secondary-color);
+    }
+    50% {
+        background: var(--tertiary-color);
+    }
+    100% {
+        background: var(--main-color);
+    }
+}

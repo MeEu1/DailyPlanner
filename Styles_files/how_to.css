@@ -1,0 +1,14 @@
+.page-section {
+    justify-content: space-around;
+}
+.page-section h2 {
+    font-size: 3em;
+}
+.page-section p {
+    font-size: 2em;
+    margin: 0 10px 0 10px;
+}
+.page-section p::selection, .page-section h2::selection, .page-section u::selection, .page-section strong::selection {
+    color: var(--main-contrast-color);
+    background: white;
+}

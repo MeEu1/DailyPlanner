@@ -1,0 +1,116 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@100&family=Nunito:wght@200&family=Open+Sans+Condensed:wght@300&family=Open+Sans:wght@300&family=Playfair+Display&family=Roboto:wght@100&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    scroll-behavior: smooth;
+}
+
+:root {
+    --main-color: #023047; 
+    --secondary-color: #219EBC;
+    --tertiary-color: #8ECAE6;
+    --main-contrast-color: #FFB703;
+    --secondary-contrast-color: yellow;
+    --tertiary-contrast-color: #FB8500;
+
+    --title-font: 'Nunito';
+    --text-font: 'Roboto';
+    --link-font: 'Open Sans';
+}
+
+html {
+    font-size: 20px;
+}
+
+header {
+    position: fixed;
+    top: 0;
+    left: 0;
+
+    z-index: 200;
+
+    width: 100%;
+
+    border-bottom: 1px solid black;
+    box-shadow: 5px 0 5px black;
+
+    background: var(--tertiary-color, blue);
+}
+
+.nav-menu ul {
+    display: flex;
+    flex-direction: row;
+
+    justify-content: center;
+
+    gap: 20px;
+
+    list-style: none;
+}
+.nav-menu li {
+    font-size: 1.5em;
+}
+.nav-menu a {
+    text-decoration: none;
+
+    font-family: var(--link-font), sans-serif;
+
+    color: black;
+}
+.nav-menu a:hover {
+    color: var(--main-contrast-color);
+}
+
+.page-section {
+    position: static;
+
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+
+    width: 100%;
+    height: 100vh;
+
+    text-align: center;
+
+    border-bottom:  1px solid black;
+    background: var(--secondary-color, blue);
+}
+.page-section:hover {
+    animation-name: page-section-animation;
+    animation-direction:alternate;
+    animation-iteration-count: infinite;
+    animation-duration: 5s;
+}
+.page-section a {
+    text-decoration: none;
+    color: white;
+
+    font-family: var(--title-font, sans-serif);
+}
+.page-section a:hover {
+    color: var(--main-contrast-color);
+}
+
+#logo {
+    width: 12vh;
+    height: 10%;
+
+    margin: 5px;
+}
+
+#menu {
+    float: right;
+}
+#menu ul {
+    margin-top: 3vh;
+    padding: 0 20px 0 0; 
+}
+
+@media (max-width: 600px) {
+    html {
+        font-size: 15px;
+    }
+}
